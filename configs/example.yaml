@@ -1,0 +1,27 @@
+# Example AIPerf Benchmark Configuration
+# Used in subsequent phases to define reproducible parameter sweeps
+
+experiment:
+  name: "mobilenet_v3_cpu_baseline"
+  description: "CPU latency and throughput baseline across thread counts and batch sizes"
+
+model:
+  name: "mobilenet_v3_small"
+  framework: "pytorch"
+  precision: "fp32"
+  device: "cpu"
+
+parameters:
+  batch_sizes:
+    - 1
+    - 4
+    - 8
+  threads:
+    - 1
+    - 2
+    - 4
+
+execution:
+  warmup_iterations: 10
+  benchmark_iterations: 50
+

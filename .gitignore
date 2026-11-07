@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing and linting
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Benchmark artifacts and local results databases
+results/*.db
+results/*.duckdb
+results/*.duckdb.wal
+results/*.json
+results/*.csv
+results/*.parquet
+!results/.gitkeep
+
+# Downloaded model weights & framework caches
+.cache/
+torch_cache/
+huggingface/
+checkpoints/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*~
+
+docs/interview-notes.md
